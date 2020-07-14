@@ -8,7 +8,7 @@ const engine = require('ejs');
 const app = express();
 
 // Importing routes
-const indexRoutes = require('./routes/index');
+const indexRoutes = require('/routes/index');
 
 // Settings
 app.set('port', process.env.PORT || 3000);
