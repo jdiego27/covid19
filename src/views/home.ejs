@@ -1,7 +1,132 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        Hola negro
-    </body>
-</html>
+<%- include ('partials/_header.ejs'); %>
+
+<div class="jumbotron text-center mb-4 text-uppercase" style="margin-bottom:0; background-color: #28A745; border: none;">    
+    <div class="container" style="background-color: transparent; border: none;">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-3 text-wrap">Recycler</h1>
+                <h2>Donde lo orgánico, se reutiliza</h2>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="/images/rs_logo_0002.png" style="width: 60%;" />
+            </div>
+        </div>
+      </div>
+</div>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ea fugiat exercitationem voluptatum dolor laborum maxime dolores 
+        cupiditate reiciendis, repellat ipsum maiores natus quibusdam rerum 
+        architecto consequatur asperiores eveniet vero voluptatibus!
+      </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Doloribus, sunt itaque repellat sequi numquam sint porro autem 
+        magni sed voluptate. Placeat ratione totam, inventore similique 
+        sed eaque doloribus alias voluptatum!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Vel, voluptatibus cupiditate corporis doloremque, ratione quasi 
+          explicabo sunt totam voluptate sequi asperiores nesciunt! Fugiat 
+          explicabo odio fugit delectus, aspernatur odit quam?</p>
+      </div>
+  </div>
+
+<main>
+  <!-- main -->
+  <div class="container" id="about">
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Libero fuga cumque ex doloribus. Quasi, illo quas velit dignissimos 
+      nulla itaque placeat eos accusantium minus ipsam exercitationem veniam. 
+      Obcaecati, consequatur inventore.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid laudantium, 
+      error aliquam laboriosam facere perspiciatis ex adipisci tempore quod iure officia 
+      illo magni rerum obcaecati id iste ipsam mollitia.</p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Vel, voluptatibus cupiditate corporis doloremque, ratione quasi 
+        explicabo sunt totam voluptate sequi asperiores nesciunt! Fugiat 
+        explicabo odio fugit delectus, aspernatur odit quam?</p>
+    </div>
+
+  </div>
+  <div class="container" id="portfolio">
+    <h1>Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Vel, voluptatibus cupiditate corporis doloremque, ratione quasi 
+      explicabo sunt totam voluptate sequi asperiores nesciunt! Fugiat 
+      explicabo odio fugit delectus, aspernatur odit quam?</p>
+    <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Vel, voluptatibus cupiditate corporis doloremque, ratione quasi 
+    explicabo sunt totam voluptate sequi asperiores nesciunt! Fugiat 
+    explicabo odio fugit delectus, aspernatur odit quam?</p>
+</div>
+
+  <!-- 
+  <div class="container" id="blog">
+    <h1>Blog</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sed, aspernatur quidem maiores est molestias culpa earum ad 
+      ex hic blanditiis cum omnis, laboriosam praesentium perferendis 
+      nesciunt accusantium, suscipit aut. Consequuntur?</p>
+  </div>
+  -->
+  <div class="container" id="contacto">
+    <h1>Contact</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      Excepturi odit a asperiores debitis dolor! Autem natus perspiciatis 
+      nostrum necessitatibus accusamus possimus, magni unde a deleniti illo sint delectus, 
+      voluptates nulla?</p>
+          
+    <div class="container" style="margin-top: 30px;">
+
+      <div class="row">
+
+              <!--FORM-->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="/enviar-contacto" method="POST">
+                      <div class="form-group">
+                        <label for="name">Nombres</label>
+                        <input class="form-control" type="text" name="name" placeholder="" id="name" value="" required>
+                       <label for="lastname">Apellidos</label>
+                        <input class="form-control" type="text" name="lastname" placeholder="" id="lastname" value="" required>
+                                                           
+                        <label for="email">Correo Electronico</label>
+                        <input class="form-control" type="email" name="email" placeholder="" id="email" value="" required>
+                       
+                        <label for="cellphone">Celular</label>
+                        <input class="form-control" type="text" name="cellphone" placeholder="" id="cellphone" value="" required>
+                      
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Mensaje</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+
+                      <!-- 
+                      <label for="formGroupExampleInput4">Selecciona Curriculum</label>
+                      <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="resume"">
+                              <label class="custom-file-label " for="customFileLang ">Seleccionar Archivo</label>
+                      </div>
+                      -->
+                      
+                      </div>
+                      <button class="btn btn-success btn-block " type="submit">Enviar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+               <!-- to the right text-->
+               
+            </div>       
+          </div>
+  </div>
+</main>
+
+<%- include ('partials/_footer.ejs'); %>
