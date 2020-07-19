@@ -12,4 +12,8 @@ router.get('/', async (req, res) => {
     res.render('home');
   });
   
+router.get('handlers/contact', async (req, res) => {
+  res.render('contact');
+});
+
   module.exports = router;
