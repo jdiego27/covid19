@@ -89,43 +89,48 @@
       <div class="row">
 
               <!--FORM-->
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body">
-                    <form action="/enviar-contacto" method="POST">
-                      <div class="form-group">
-                        <label for="name">Nombres</label>
-                        <input class="form-control" type="text" name="name" placeholder="" id="name" value="" required>
-                       <label for="lastname">Apellidos</label>
-                        <input class="form-control" type="text" name="lastname" placeholder="" id="lastname" value="" required>
-                                                           
-                        <label for="email">Correo Electronico</label>
-                        <input class="form-control" type="email" name="email" placeholder="" id="email" value="" required>
-                       
-                        <label for="cellphone">Celular</label>
-                        <input class="form-control" type="text" name="cellphone" placeholder="" id="cellphone" value="" required>
-                      
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1">Mensaje</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                        </div>
-
-                      <!-- 
-                      <label for="formGroupExampleInput4">Selecciona Curriculum</label>
-                      <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="resume"">
-                              <label class="custom-file-label " for="customFileLang ">Seleccionar Archivo</label>
-                      </div>
-                      -->
-                      
-                      </div>
-                      <button class="btn btn-success btn-block " type="submit">Enviar</button>
+              <div class="container">
+                <h1 class="brand"><span>Covid19</span> Web Design</h1>
+                <div class="wrapper animated bounceInLeft">
+                  <div class="company-info">
+                    <h3>Covid19 Web Design</h3>
+                    {{msg}}
+                    <ul>
+                      <li><i class="fa fa-road"></i> 44 Something st</li>
+                      <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+                      <li><i class="fa fa-envelope"></i> test@acme.test</li>
+                    </ul>
+                  </div>
+                  <div class="contact">
+                    <h3>Email Us</h3>
+                    <form>
+                      <p>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                      </p>
+                      <p>
+                        <label>Company</label>
+                        <input type="text" name="company">
+                      </p>
+                      <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email">
+                      </p>
+                      <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone">
+                      </p>
+                      <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5"></textarea>
+                      </p>
+                      <p class="full">
+                        <button>Submit</button>
+                      </p>
                     </form>
                   </div>
                 </div>
-              </div>
-               <!-- to the right text-->
-               
+              </div>        
             </div>       
           </div>
   </div>

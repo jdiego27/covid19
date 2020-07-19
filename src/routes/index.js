@@ -24,7 +24,9 @@ router.get('/', async (req, res) => {
     res.render('home');
   });
 
-router.get('/contact', function(req, res) {
+// GET THE CONTACT SITE
+
+router.get('/contact', async(req, res)  =>{
   res.render('contact');
 });
 
