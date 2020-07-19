@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
     res.render('home');
   });
 
-router.get('/', function(req, res) {
+router.get('/contact', function(req, res) {
   res.render('contact');
 });
 
