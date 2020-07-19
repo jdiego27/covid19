@@ -6,6 +6,7 @@ const router = express.Router();
 const app = express();
 const engine = require('ejs');
 
+
 // View engine setup
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -45,6 +46,16 @@ app.post('/send', (req, res) => {
     <h3>Message</h3>
     <p>${req.body.message}</p>
   `;
+
+// ENVIAR FORMULARIO:
+router.post('/send-form', async (req, res) => {
+  //const addcv =  new Cach(req.body);
+  //await addcv.save();
+  req.flash('success', "Has cambiado exitosamente los datos!");
+  //console.log(addcv);
+  res.redirect('/home');
+
+});
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({

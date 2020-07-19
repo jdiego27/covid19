@@ -1,5 +1,6 @@
 <%- include ('partials/_header.ejs'); %>
 
+
 <div class="jumbotron text-center mb-4 text-uppercase" style="margin-bottom:0; background-color: rgb(24, 192, 221); border: none;">    
     <div class="container" style="background-color: transparent; border: none;">
         <div class="row">
@@ -87,8 +88,10 @@
       <div class="row">
 
               <!--FORM-->
+              <%- include('partials/_mensajes.ejs'); -%>
               <div class="container">
                 <h1 class="brand"><span></span></h1>
+                <form action="/send-form" method="POST"></form>
                 <div class="wrapper animated bounceInLeft">
                   <div class="company-info">
                     <h3>Informacion</h3>
